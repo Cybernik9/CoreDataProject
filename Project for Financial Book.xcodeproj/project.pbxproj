@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8450ED4E1B72257500D705B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED4D1B72257500D705B8 /* main.m */; };
+		8450ED511B72257500D705B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED501B72257500D705B8 /* AppDelegate.m */; };
+		8450ED541B72257500D705B8 /* Project_for_Financial_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED521B72257500D705B8 /* Project_for_Financial_Book.xcdatamodeld */; };
+		8450ED571B72257500D705B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED561B72257500D705B8 /* ViewController.m */; };
+		8450ED5A1B72257500D705B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8450ED581B72257500D705B8 /* Main.storyboard */; };
+		8450ED5C1B72257500D705B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8450ED5B1B72257500D705B8 /* Images.xcassets */; };
+		8450ED5F1B72257500D705B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8450ED5D1B72257500D705B8 /* LaunchScreen.xib */; };
+		8450ED6B1B72257500D705B8 /* Project_for_Financial_BookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED6A1B72257500D705B8 /* Project_for_Financial_BookTests.m */; };
+		8450ED771B7226A900D705B8 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED761B7226A900D705B8 /* Account.m */; };
+		8450ED7A1B7226A900D705B8 /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED791B7226A900D705B8 /* Object.m */; };
+		8450ED7D1B7226AA00D705B8 /* Trips.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED7C1B7226AA00D705B8 /* Trips.m */; };
+		8450ED801B72272C00D705B8 /* AddObjectToCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED7F1B72272C00D705B8 /* AddObjectToCoreData.m */; };
+		8450ED841B7229B600D705B8 /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED831B7229B600D705B8 /* AccountViewController.m */; };
+		8450ED871B7230C200D705B8 /* TripsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED861B7230C200D705B8 /* TripsTableViewController.m */; };
+		8450ED8A1B72480C00D705B8 /* CreateTripsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8450ED891B72480C00D705B8 /* CreateTripsViewController.m */; };
+		84569AEF1B73DDE300C2AFE6 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84569AEE1B73DDE300C2AFE6 /* CoreDataTableViewController.m */; };
+		8462CF0B1BB022D000CDC3FC /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8462CF0A1BB022D000CDC3FC /* DatePickerViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8450ED651B72257500D705B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8450ED401B72257500D705B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8450ED471B72257500D705B8;
+			remoteInfo = "Project for Financial Book";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8450ED481B72257500D705B8 /* Project for Financial Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project for Financial Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8450ED4C1B72257500D705B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8450ED4D1B72257500D705B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8450ED4F1B72257500D705B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8450ED501B72257500D705B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8450ED531B72257500D705B8 /* Project_for_Financial_Book.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project_for_Financial_Book.xcdatamodel; sourceTree = "<group>"; };
+		8450ED551B72257500D705B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8450ED561B72257500D705B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8450ED591B72257500D705B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8450ED5B1B72257500D705B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8450ED5E1B72257500D705B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8450ED641B72257500D705B8 /* Project for Financial BookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Project for Financial BookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8450ED691B72257500D705B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8450ED6A1B72257500D705B8 /* Project_for_Financial_BookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Project_for_Financial_BookTests.m; sourceTree = "<group>"; };
+		8450ED751B7226A900D705B8 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		8450ED761B7226A900D705B8 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		8450ED781B7226A900D705B8 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		8450ED791B7226A900D705B8 /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
+		8450ED7B1B7226AA00D705B8 /* Trips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trips.h; sourceTree = "<group>"; };
+		8450ED7C1B7226AA00D705B8 /* Trips.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trips.m; sourceTree = "<group>"; };
+		8450ED7E1B72272C00D705B8 /* AddObjectToCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddObjectToCoreData.h; sourceTree = "<group>"; };
+		8450ED7F1B72272C00D705B8 /* AddObjectToCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddObjectToCoreData.m; sourceTree = "<group>"; };
+		8450ED821B7229B600D705B8 /* AccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountViewController.h; sourceTree = "<group>"; };
+		8450ED831B7229B600D705B8 /* AccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountViewController.m; sourceTree = "<group>"; };
+		8450ED851B7230C200D705B8 /* TripsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsTableViewController.h; sourceTree = "<group>"; };
+		8450ED861B7230C200D705B8 /* TripsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsTableViewController.m; sourceTree = "<group>"; };
+		8450ED881B72480C00D705B8 /* CreateTripsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTripsViewController.h; sourceTree = "<group>"; };
+		8450ED891B72480C00D705B8 /* CreateTripsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTripsViewController.m; sourceTree = "<group>"; };
+		84569AED1B73DDE300C2AFE6 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		84569AEE1B73DDE300C2AFE6 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		8462CF091BB022D000CDC3FC /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		8462CF0A1BB022D000CDC3FC /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8450ED451B72257500D705B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450ED611B72257500D705B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8450ED3F1B72257500D705B8 = {
+			isa = PBXGroup;
+			children = (
+				8450ED4A1B72257500D705B8 /* Project for Financial Book */,
+				8450ED671B72257500D705B8 /* Project for Financial BookTests */,
+				8450ED491B72257500D705B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8450ED491B72257500D705B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8450ED481B72257500D705B8 /* Project for Financial Book.app */,
+				8450ED641B72257500D705B8 /* Project for Financial BookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8450ED4A1B72257500D705B8 /* Project for Financial Book */ = {
+			isa = PBXGroup;
+			children = (
+				8450ED741B72258700D705B8 /* Core Data */,
+				8450ED811B72273900D705B8 /* View Controllers */,
+				8450ED4F1B72257500D705B8 /* AppDelegate.h */,
+				8450ED501B72257500D705B8 /* AppDelegate.m */,
+				8450ED551B72257500D705B8 /* ViewController.h */,
+				8450ED561B72257500D705B8 /* ViewController.m */,
+				8450ED581B72257500D705B8 /* Main.storyboard */,
+				8450ED5B1B72257500D705B8 /* Images.xcassets */,
+				8450ED5D1B72257500D705B8 /* LaunchScreen.xib */,
+				8450ED4B1B72257500D705B8 /* Supporting Files */,
+			);
+			path = "Project for Financial Book";
+			sourceTree = "<group>";
+		};
+		8450ED4B1B72257500D705B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8450ED4C1B72257500D705B8 /* Info.plist */,
+				8450ED4D1B72257500D705B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8450ED671B72257500D705B8 /* Project for Financial BookTests */ = {
+			isa = PBXGroup;
+			children = (
+				8450ED6A1B72257500D705B8 /* Project_for_Financial_BookTests.m */,
+				8450ED681B72257500D705B8 /* Supporting Files */,
+			);
+			path = "Project for Financial BookTests";
+			sourceTree = "<group>";
+		};
+		8450ED681B72257500D705B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8450ED691B72257500D705B8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8450ED741B72258700D705B8 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				8450ED7B1B7226AA00D705B8 /* Trips.h */,
+				8450ED7C1B7226AA00D705B8 /* Trips.m */,
+				8450ED781B7226A900D705B8 /* Object.h */,
+				8450ED791B7226A900D705B8 /* Object.m */,
+				8450ED751B7226A900D705B8 /* Account.h */,
+				8450ED761B7226A900D705B8 /* Account.m */,
+				8450ED521B72257500D705B8 /* Project_for_Financial_Book.xcdatamodeld */,
+				8450ED7E1B72272C00D705B8 /* AddObjectToCoreData.h */,
+				8450ED7F1B72272C00D705B8 /* AddObjectToCoreData.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		8450ED811B72273900D705B8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8450ED821B7229B600D705B8 /* AccountViewController.h */,
+				8450ED831B7229B600D705B8 /* AccountViewController.m */,
+				8450ED851B7230C200D705B8 /* TripsTableViewController.h */,
+				8450ED861B7230C200D705B8 /* TripsTableViewController.m */,
+				8450ED881B72480C00D705B8 /* CreateTripsViewController.h */,
+				8450ED891B72480C00D705B8 /* CreateTripsViewController.m */,
+				8462CF091BB022D000CDC3FC /* DatePickerViewController.h */,
+				8462CF0A1BB022D000CDC3FC /* DatePickerViewController.m */,
+				84569AED1B73DDE300C2AFE6 /* CoreDataTableViewController.h */,
+				84569AEE1B73DDE300C2AFE6 /* CoreDataTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8450ED471B72257500D705B8 /* Project for Financial Book */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8450ED6E1B72257500D705B8 /* Build configuration list for PBXNativeTarget "Project for Financial Book" */;
+			buildPhases = (
+				8450ED441B72257500D705B8 /* Sources */,
+				8450ED451B72257500D705B8 /* Frameworks */,
+				8450ED461B72257500D705B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project for Financial Book";
+			productName = "Project for Financial Book";
+			productReference = 8450ED481B72257500D705B8 /* Project for Financial Book.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8450ED631B72257500D705B8 /* Project for Financial BookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8450ED711B72257500D705B8 /* Build configuration list for PBXNativeTarget "Project for Financial BookTests" */;
+			buildPhases = (
+				8450ED601B72257500D705B8 /* Sources */,
+				8450ED611B72257500D705B8 /* Frameworks */,
+				8450ED621B72257500D705B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8450ED661B72257500D705B8 /* PBXTargetDependency */,
+			);
+			name = "Project for Financial BookTests";
+			productName = "Project for Financial BookTests";
+			productReference = 8450ED641B72257500D705B8 /* Project for Financial BookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8450ED401B72257500D705B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = HY;
+				TargetAttributes = {
+					8450ED471B72257500D705B8 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					8450ED631B72257500D705B8 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 8450ED471B72257500D705B8;
+					};
+				};
+			};
+			buildConfigurationList = 8450ED431B72257500D705B8 /* Build configuration list for PBXProject "Project for Financial Book" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8450ED3F1B72257500D705B8;
+			productRefGroup = 8450ED491B72257500D705B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8450ED471B72257500D705B8 /* Project for Financial Book */,
+				8450ED631B72257500D705B8 /* Project for Financial BookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8450ED461B72257500D705B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8450ED5A1B72257500D705B8 /* Main.storyboard in Resources */,
+				8450ED5F1B72257500D705B8 /* LaunchScreen.xib in Resources */,
+				8450ED5C1B72257500D705B8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450ED621B72257500D705B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8450ED441B72257500D705B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8450ED7D1B7226AA00D705B8 /* Trips.m in Sources */,
+				8450ED7A1B7226A900D705B8 /* Object.m in Sources */,
+				84569AEF1B73DDE300C2AFE6 /* CoreDataTableViewController.m in Sources */,
+				8450ED541B72257500D705B8 /* Project_for_Financial_Book.xcdatamodeld in Sources */,
+				8450ED511B72257500D705B8 /* AppDelegate.m in Sources */,
+				8450ED871B7230C200D705B8 /* TripsTableViewController.m in Sources */,
+				8450ED841B7229B600D705B8 /* AccountViewController.m in Sources */,
+				8450ED571B72257500D705B8 /* ViewController.m in Sources */,
+				8450ED771B7226A900D705B8 /* Account.m in Sources */,
+				8450ED8A1B72480C00D705B8 /* CreateTripsViewController.m in Sources */,
+				8462CF0B1BB022D000CDC3FC /* DatePickerViewController.m in Sources */,
+				8450ED801B72272C00D705B8 /* AddObjectToCoreData.m in Sources */,
+				8450ED4E1B72257500D705B8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8450ED601B72257500D705B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8450ED6B1B72257500D705B8 /* Project_for_Financial_BookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8450ED661B72257500D705B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8450ED471B72257500D705B8 /* Project for Financial Book */;
+			targetProxy = 8450ED651B72257500D705B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8450ED581B72257500D705B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8450ED591B72257500D705B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8450ED5D1B72257500D705B8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8450ED5E1B72257500D705B8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8450ED6C1B72257500D705B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8450ED6D1B72257500D705B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8450ED6F1B72257500D705B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project for Financial Book/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8450ED701B72257500D705B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project for Financial Book/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8450ED721B72257500D705B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Project for Financial BookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project for Financial Book.app/Project for Financial Book";
+			};
+			name = Debug;
+		};
+		8450ED731B72257500D705B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Project for Financial BookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Project for Financial Book.app/Project for Financial Book";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8450ED431B72257500D705B8 /* Build configuration list for PBXProject "Project for Financial Book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8450ED6C1B72257500D705B8 /* Debug */,
+				8450ED6D1B72257500D705B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8450ED6E1B72257500D705B8 /* Build configuration list for PBXNativeTarget "Project for Financial Book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8450ED6F1B72257500D705B8 /* Debug */,
+				8450ED701B72257500D705B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8450ED711B72257500D705B8 /* Build configuration list for PBXNativeTarget "Project for Financial BookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8450ED721B72257500D705B8 /* Debug */,
+				8450ED731B72257500D705B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8450ED521B72257500D705B8 /* Project_for_Financial_Book.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8450ED531B72257500D705B8 /* Project_for_Financial_Book.xcdatamodel */,
+			);
+			currentVersion = 8450ED531B72257500D705B8 /* Project_for_Financial_Book.xcdatamodel */;
+			path = Project_for_Financial_Book.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8450ED401B72257500D705B8 /* Project object */;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Account" representedClassName="Account" parentEntity="Object" syncable="YES">
+        <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="trips" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Trips" inverseName="account" inverseEntity="Trips" syncable="YES"/>
+    </entity>
+    <entity name="Object" representedClassName="Object" syncable="YES"/>
+    <entity name="Trips" representedClassName="Trips" parentEntity="Object" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="destination" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="trips" inverseEntity="Account" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Object" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Trips" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
