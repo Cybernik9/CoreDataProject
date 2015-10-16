@@ -7,6 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreDataTableViewController.h"
+
+@protocol CreateTripsViewControllerProtocol <NSObject>
+
+- (void) saveObjectToCoreData:(NSString*) destination startDate:(NSDate*) startDate
+                      endDate:(NSDate*) endDate comment:(NSString*) comment;
+
+@end
 
 @interface CreateTripsViewController : UIViewController
 
@@ -14,8 +22,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *startDate;
 @property (weak, nonatomic) IBOutlet UITextField *endDate;
 @property (weak, nonatomic) IBOutlet UITextField *comment;
-@property (assign) CreateTripsViewController *delegate;
+//@property (assign) CreateTripsViewController *delegate;
 
+@property (nonatomic, weak) NSObject <CreateTripsViewControllerProtocol> *createDelegate;
 
 - (IBAction)actionSaveTripBarButton:(id)sender;
 

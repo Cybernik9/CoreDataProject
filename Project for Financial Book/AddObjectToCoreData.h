@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "Trips.h"
 
-
-@interface AddObjectToCoreData : NSObject
+@interface AddObjectToCoreData : NSObject 
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
@@ -23,8 +23,5 @@
 
 - (BOOL) createAccount:(NSString*) login password:(NSString*) password;
 - (BOOL) isTrueLoginAndPassword:(NSString*) login password:(NSString*) password;
-- (void) createTrips:(NSString*) destination startDate:(NSDate*) startDate
-             endDate:(NSDate*) endDate comment:(NSString*) comment;
-- (NSSet*) getTrips;
 
 @end

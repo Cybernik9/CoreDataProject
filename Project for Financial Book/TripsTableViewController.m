@@ -10,16 +10,17 @@
 #import "CreateTripsViewController.h"
 #import "Trips.h"
 #import "Account.h"
-#import "CoreDataTableViewController.h"
 #import "AddObjectToCoreData.h"
 
 @interface TripsTableViewController () 
 
 @end
 
+
+
 @implementation TripsTableViewController
 
-static NSArray* trips;
+//static NSArray* trips;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -35,7 +36,7 @@ static NSArray* trips;
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
-    
+    /*
     AddObjectToCoreData* object = [AddObjectToCoreData alloc];
     NSSet* set = [NSSet alloc];
     set = [object getTrips];
@@ -44,13 +45,15 @@ static NSArray* trips;
     NSLog(@"/n%@",trips);
     NSLog(@"/n%@",[trips objectAtIndex:0]);
     [self.tableView reloadData];
+     */
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -88,7 +91,7 @@ static NSArray* trips;
     return cell;
 
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -166,24 +169,24 @@ static NSArray* trips;
 
 @synthesize fetchedResultsController = _fetchedResultsController;
 
-- (NSFetchedResultsController *)fetchedResultsController
-{
+- (NSFetchedResultsController *)fetchedResultsController {
+    
     if (_fetchedResultsController != nil) {
         return _fetchedResultsController;
     }
     
-    CoreDataTableViewController* coreData = [CoreDataTableViewController alloc];
+    //CoreDataTableViewController* coreData = [CoreDataTableViewController alloc];
     
     NSFetchRequest* fetchRequest = [[NSFetchRequest alloc] init];
     
     NSEntityDescription* description =
     [NSEntityDescription entityForName:@"Trips"
-                inManagedObjectContext:coreData.managedObjectContext];
+                inManagedObjectContext:self.managedObjectContext];
     
     [fetchRequest setEntity:description];
     
     NSSortDescriptor* nameDescription =
-    [[NSSortDescriptor alloc] initWithKey:@"destination" ascending:YES];
+    [[NSSortDescriptor alloc] initWithKey:@"startDate" ascending:YES];
     
     [fetchRequest setSortDescriptors:@[nameDescription]];
     
@@ -191,7 +194,7 @@ static NSArray* trips;
     // nil for section name key path means "no sections".
     NSFetchedResultsController *aFetchedResultsController =
     [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest
-                                        managedObjectContext:coreData.managedObjectContext
+                                        managedObjectContext:self.managedObjectContext
                                           sectionNameKeyPath:nil
                                                    cacheName:@"Master"];
     aFetchedResultsController.delegate = self;
@@ -208,6 +211,27 @@ static NSArray* trips;
     return _fetchedResultsController;
 }
 
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+    
+    Trips* trips = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    cell.textLabel.text = trips.destination;
+    cell.detailTextLabel.text = [self dateFormatString:trips.startDate];
 
+}
+
+- (NSString*)dateFormatString:(NSDate*)date {
+    
+    NSDateFormatter * formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"dd.MM.yyyy"];
+    
+    return [formatter stringFromDate:date];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"didSelectRowAtIndexPath");
+    
+}
 
 @end

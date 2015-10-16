@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BC55BE0A-9CC0-4267-BAC7-C36F53EA43A9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Project for Financial Book</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E676D5AFA2CA2F61D3E5F00D9B42D4B137FD73CB</key>
+		<string>https://github.com/Cybernik9/CoreDataProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Project for Financial Book.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E676D5AFA2CA2F61D3E5F00D9B42D4B137FD73CB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Cybernik9/CoreDataProject.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E676D5AFA2CA2F61D3E5F00D9B42D4B137FD73CB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E676D5AFA2CA2F61D3E5F00D9B42D4B137FD73CB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoreDataProject</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "CoreDataTableViewController.h"
 
-
-@interface TripsTableViewController : UITableViewController
+@interface TripsTableViewController : CoreDataTableViewController
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 

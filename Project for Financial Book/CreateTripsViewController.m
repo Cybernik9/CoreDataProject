@@ -9,6 +9,7 @@
 #import "CreateTripsViewController.h"
 #import "AddObjectToCoreData.h"
 #import "DatePickerViewController.h"
+#import "Trips.h"
 
 @interface CreateTripsViewController ()
 
@@ -29,6 +30,8 @@ static bool isStartDate;
     [super viewDidAppear:YES];
     self.startDate.text = [self dateFormatString:startDate];
     self.endDate.text = [self dateFormatString:endDate];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,17 +61,21 @@ static bool isStartDate;
 
 - (IBAction)actionSaveTripBarButton:(id)sender {
     
-    AddObjectToCoreData* addObject = [[AddObjectToCoreData alloc] init];
+    CoreDataTableViewController* addObject = [[CoreDataTableViewController alloc] init];
     
     [addObject createTrips:self.nameTrip.text startDate:startDate endDate:endDate comment:self.comment.text];
     
-    [self.navigationController popViewControllerAnimated:YES];
+    //[self.createDelegate saveObjectToCoreData:self.nameTrip.text startDate:startDate endDate:endDate comment:self.comment.text];
     
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)actionStartDate:(id)sender {
     
     [self actionOpenDatePicker];
+    
+    [self.startDate resignFirstResponder];
+    
     
     isStartDate = YES;
 }
@@ -96,5 +103,7 @@ static bool isStartDate;
         endDate = date;
     }
 }
+
+
 
 @end

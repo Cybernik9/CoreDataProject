@@ -8,6 +8,7 @@
 
 #import "CoreDataTableViewController.h"
 #import "AddObjectToCoreData.h"
+#import "Account.h"
 
 @interface CoreDataTableViewController ()
 
@@ -160,5 +161,47 @@
 {
     
 }
+
+- (void) createTrips:(NSString*) destination startDate:(NSDate*) startDate
+             endDate:(NSDate*) endDate comment:(NSString*) comment {
+    
+    NSArray* resultArray = [self giveAccountArray];
+    NSError* error = nil;
+    
+    Trips* trips =
+    [NSEntityDescription insertNewObjectForEntityForName:@"Trips"
+                                  inManagedObjectContext:self.managedObjectContext];
+    
+    trips.destination = destination;
+    trips.startDate = startDate;
+    trips.endDate = endDate;
+    trips.comment = comment;
+    
+    for (Account* account in resultArray) {
+        
+        if ([account.login isEqualToString:@"a"]) {
+            [account addTripsObject:trips];
+            if (![self.managedObjectContext save:&error]) {
+                NSLog(@"%@", [error localizedDescription]);
+            }
+            return;
+        }
+    }
+}
+
+- (NSArray*) giveAccountArray {
+    
+    NSFetchRequest* request = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription* description = [NSEntityDescription entityForName:@"Account"
+                                                   inManagedObjectContext:self.managedObjectContext];
+    
+    [request setEntity:description];
+    NSError* error = nil;
+    NSArray* resultArray = [self.managedObjectContext executeFetchRequest:request error:&error];
+    
+    return resultArray;
+}
+
 @end
 

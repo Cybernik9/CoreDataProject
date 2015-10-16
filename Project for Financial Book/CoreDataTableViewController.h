@@ -16,4 +16,7 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 
+- (void) createTrips:(NSString*) destination startDate:(NSDate*) startDate
+             endDate:(NSDate*) endDate comment:(NSString*) comment;
+
 @end

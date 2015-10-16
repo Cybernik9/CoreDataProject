@@ -8,8 +8,12 @@
 
 #import "AddObjectToCoreData.h"
 #import "Account.h"
-#import "Trips.h"
+#import "CreateTripsViewController.h"
 
+@interface AddObjectToCoreData() <CreateTripsViewControllerProtocol>
+
+
+@end
 
 @implementation AddObjectToCoreData
 
@@ -153,48 +157,6 @@ static NSString* enterLogin;
     }
     
     return NO;
-}
-
-- (void) createTrips:(NSString*) destination startDate:(NSDate*) startDate
-             endDate:(NSDate*) endDate comment:(NSString*) comment {
-    
-    NSArray* resultArray = [self giveAccountArray];
-    NSError* error = nil;
-    
-    Trips* trips =
-    [NSEntityDescription insertNewObjectForEntityForName:@"Trips"
-                                  inManagedObjectContext:self.managedObjectContext];
-    
-    trips.destination = destination;
-    trips.startDate = startDate;
-    trips.endDate = endDate;
-    trips.comment = comment;
-    
-    for (Account* account in resultArray) {
-        
-        if ([account.login isEqualToString:enterLogin]) {
-            [account addTripsObject:trips];
-            if (![self.managedObjectContext save:&error]) {
-                NSLog(@"%@", [error localizedDescription]);
-            }
-            return;
-        }
-    }
-    
-}
-
-- (NSSet*) getTrips {
-    
-    NSArray* resultArray = [self giveAccountArray];
-    
-    for (Account* account in resultArray) {
-        if ([account.login isEqualToString:enterLogin]) {
-            NSLog(@"%@",account.trips);
-            NSLog(@"/n %@",account);
-            return account.trips;
-        }
-    }
-    return nil;
 }
 
 - (NSArray*) giveAccountArray {
